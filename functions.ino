@@ -82,3 +82,28 @@ bool isTall(int height){
   }
 }
   //Output: 0
+
+
+//Example No 5: Trying to glow led
+int button=7;
+void setup(){
+  pinMode(LED_BUILTIN,OUTPUT);
+  pinMode(button,INPUT);
+  Serial.begin(9600);
+}
+void loop(){
+  Serial.println(digitalRead(button));
+  if(digitalRead(button)==HIGH){
+    digitalWrite(LED_BUILTIN,HIGH);
+  }
+  else{
+    digitalWrite(LED_BUILTIN,LOW);
+  }
+}
+//OUTPUT 
+/*
+0
+0
+0
+0
+*/
