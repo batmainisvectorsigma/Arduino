@@ -34,3 +34,33 @@ void myCustomLED(int pin){
   digitalWrite(pin,LOW);
   delay(1000);
 }
+
+//Example No 3: Finding the sum of three number
+void setup(){
+  Serial.begin(96000);
+}
+void loop(){
+  int d=sum(7,8,9);
+  Serial.println(d);
+}
+int sum(int a,int b,int c){
+  return a+b+c;
+}
+
+ /*
+OUTPUT:
+24
+24
+24
+24
+24
+24
+24
+24
+24
+24
+24
+24
+24 
+FOR INFINITE TIMES , I MEAN YEAH
+*/
