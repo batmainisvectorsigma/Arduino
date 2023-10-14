@@ -26,6 +26,7 @@ void setup(){
   Serial.println("The lessons about is operator");
   Serial.println("true and true is:");
   Serial.print(true&&true);
+  //or Serial.print(2>1&&1>0); here both of the expressions are true
   Serial.print("true and false is :");
   Serial.print(true&&false);
   Serial.print("false and true is:");
