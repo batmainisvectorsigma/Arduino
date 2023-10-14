@@ -14,7 +14,8 @@ void loop() {
 // if you don't use these two functions you will probably get an error
 //comments in arduino ino is same as in java
 // arduino is case sensitive
-
+// you can add whatever spaces yout want
+// if you want to use more than two words use camel casing
 
 
 
@@ -64,7 +65,7 @@ void setup() {
 // the loop function runs over and over again forever
 void loop() {
   digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)   digitalWrite is a build in function is used to manipulate the digital pins
-                                    // and we can also manipulate analog pins using digital write if the pin is decaled as outputin steup using pin mode digital write will write a value of 5 vold
+                                    // and we can also manipulate analog pins using digital write if the pin is decalared as outputin steup using pin mode digital write will write a value of 5 vold
                                      //if we use high and to 0 if we use low but make sure that uuou have declared the pin as output otherwise you will see an unexpected results then after this 
                                     //line we have delay the value of 1000 in that as the name suggests for a speccific time which is 1 second
   
