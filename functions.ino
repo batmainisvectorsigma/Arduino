@@ -64,3 +64,21 @@ OUTPUT:
 24 
 FOR INFINITE TIMES , I MEAN YEAH
 */
+
+//Example No: 4 Trying to return a boolean 
+void setup(){
+  Serial.begin(9600);
+  Serial.println(isTall(123));
+}
+void loop(){
+  
+}
+bool isTall(int height){
+  if(height>1000){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+  //Output: 0
