@@ -107,3 +107,13 @@ void loop(){
 0
 0
 */
+
+
+//---------------------------------------------BUILDIN FUNCTION----------------------------------------------------------------
+//-------analogRead(pin)
+void setup(){
+Serial.begin(9600);
+}
+void loop(){
+ Serial.println(analogRead(A0)); 
+}
