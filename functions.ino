@@ -117,3 +117,36 @@ Serial.begin(9600);
 void loop(){
  Serial.println(analogRead(A0)); 
 }
+
+
+//------------------------------------------ PWM FREQUENCY
+//Example No 1
+void setup(){
+}
+void loop(){
+  analogWrite(10,50);
+  delay(1000);
+  analogWrite(10,100);
+  delay(1000);
+  analogWrite(10,150);
+  delay(1000);
+  analogWrite(10,200);
+  delay(1000);
+  analogWrite(10,255);
+  delay(1000);
+}
+//Example No 2
+int ledPin=10;
+void setup(){
+  
+}
+void loop(){
+  for(int fadeValue=0;fadeValue<=255;fadeValue+=5){
+    analogWrite(ledPin,fadeValue);
+    delay(30);
+  }
+  for(int fadeValue=255;fadeValue>=0;fadeValue-=5){
+    analogWrite(ledPin,fadeValue);
+    delay(30);
+  }
+}
